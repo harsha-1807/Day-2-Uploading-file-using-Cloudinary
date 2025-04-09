@@ -35,7 +35,8 @@ const FileUpload = () => {
         Upload
       </button>
       {loading && <p>Loading...</p>}
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p style={{ color: "red" }}>{error}</p> }
+      {imageUrl && <p style={{ color: "green" }}>File uploaded successfully!</p>}
       {imageUrl && <img src={imageUrl} alt="Uploaded file" />}
     </div>
   );
